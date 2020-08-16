@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: rgb(223, 223, 223);
+        }
+
+        .header {}
+
+        ul {
+            background-color: gray;
+            width: 95%;
+            height: 40px;
+            margin: 0px 10px 10px 10px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: none;
+            position: fixed;
+            top: 0;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        ul li a {
+            display: block;
+            color: white;
+            width: 230px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 10px 10px;
+            padding: 10px 20px;
+        }
+
+        ul li a:hover {
+            background-color: white;
+            color: black;
+        }
+
+
+        .container {
+            background-color: white;
+            width: 98%;
+            height: auto;
+            margin: 0px 10px 10px 10px;
+            display: ;
+            justify-items: center;
+            align-items: center;
+            /* margin-right: 10px; */
+            /* padding: 10px; */
+            border: 2px solid rgb(197, 197, 197);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .banner {
+            background-image: url("Practical-8/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+            height: 800px;
+            margin: 80px 10px 200px 10px;
+            /* display: flex;
+            text-align: start;
+            justify-content: center;
+            align-items: center; */
+            font-size: 40px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .section-1 {
+            text-align: center;
+            display: block;
+            height: 300px;
+            margin-top: 150px;
+            margin-bottom: 150px;
+            /* background-color: lightcoral; */
+            /* margin: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle {
+            float: left;
+            margin: 10px 50px;
+            background-color: rgba(245, 189, 17, 1);
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .img-c {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+        }
+
+        .section-2 {
+            /* border: 2px solid red; */
+            margin-top: 150px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 150px;
+            /* clear: both; */
+        }
+
+        .section-2:after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+        .left-side {
+            width: 50%;
+            background-color: gray;
+            height: 800px;
+            padding: 5px;
+            /* border: 2px solid blue; */
+            float: left;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            font-size: 40px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .right-side {
+            width: 48%;
+            height: 800px;
+            /* border: 2px solid green; */
+            float: right;
+            font-size: 40px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .articles {
+            height: 263px;
+            width: 100%;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-align: center;
+            /* padding: 10px; */
+            /* background-color: rgb(219, 125, 71); */
+            float: right;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            font-size: 50px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .section-3 {
+            text-align: center;
+            display: block;
+            height: 600px;
+            margin-top: 15px;
+            /* background-color: lightcoral; */
+            /* margin: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rect {
+            float: left;
+            margin: 20px 15px;
+            background-color: white;
+            width: 20%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            /* float: left;
+            margin: 20px 30px;
+            background-color: white;
+            width: 230px;
+            height: 280px;
+            padding: 20px;
+            /* border-radius: 50%; */
+            /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); */
+        }
+
+        .rect img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .rect h4 {
+            text-align: center;
+        }
+
+        .rect p {
+            margin: 10px;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 25px;
+        }
+
+        .rect a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            background-color: red;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .rect a:hover {
+            background-color: blue;
+        }
+
+        .footer {
+            background-color: lightslategray;
+            height: 120px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            font-size: 30px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header" id="home">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#teams">Team</a></li>
+                <li><a href="#tc">Technologies</a></li>
+                <li><a href="#contect">Contact</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <h1 style="font-size: 100px; margin: 10px;">Practical-8</h1>
+        </div>
+        <div style="margin-top: 155px; text-align: center;" id="teams">
+            <span
+                style="font-size: 60px;color: black;font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Team
+                Members
+            </span>
+        </div>
+        <div class="section-1">
+            <div class="circle"><img class="img-c" src="Practical-8/1.png" alt=""></div>
+            <div class="circle"><img class="img-c" src="Practical-8/2.png" alt=""></div>
+            <div class="circle"><img class="img-c" src="Practical-8/3.png" alt=""></div>
+            <div class="circle"><img class="img-c" src="Practical-8/9.png" alt=""></div>
+        </div>
+        <div style="margin-bottom: 25px; text-align: center; margin-bottom: 40px;" id="about">
+            <span
+                style="font-size: 60px;color: black;font-family: Arial, Helvetica, sans-serif; font-weight: bold;">About
+                US</span>
+        </div>
+        <div class="section-2">
+            <div class="left-side">
+                <h2>About Projects</h2>
+                <br>
+                <div class="main-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis
+                    deleniti voluptatibus, laborum dolor eius ex placeat odio dignissimos, officia maiores eum minus.
+                    Labore nostrum deserunt nam ducimus laborum asperiores doloremque quae animi blanditiis nesciunt
+                    voluptate qui totam adipisci ut aspernatur natus consectetur aliquid odit, id ex itaque! Quisquam
+                    soluta temporibus architecto magnam sunt, .</div>
+            </div>
+            <div class="right-side">
+                <div class="articles" style="background-image: url('Practical-8/p1.jpg');"> Project-1</div>
+                <div class="articles" style="background-image: url('Practical-8/p2.jpeg');">Project-2</div>
+                <div class="articles" style="background-image: url('Practical-8/p3.jpg');">Project-3</div>
+            </div>
+        </div>
+        <div style="margin: 55px; text-align: center;" id="tc">
+            <span
+                style="font-size: 60px;color: black;font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Technologies
+                Used</span>
+        </div>
+        <div class="section-3">
+            <div class="rect">
+                <img src="./Practical-5/intro to html.png" alt="">
+                <h4>Introduction to HTML</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ex consequuntur, minima cumque sequi
+                    molestias eum porro. Maiores recusandae natus nobis repellendus minus ullam facere, porro illo? Iure
+                    vitae amet nam veniam non? Suscipit similique maxime deleniti obcaecati recusandae, ipsum, culpa
+                    dignissimos, amet eum dolor earum. Cupiditate tenetur rem error.
+                </p>
+                <a href="Practical-5-html.html">Read More</a>
+            </div>
+            <div class="rect">
+                <img src="./Practical-5/introtocss.png" alt="">
+                <h4>Introduction to HTML</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ex consequuntur, minima cumque sequi
+                    molestias eum porro. Maiores recusandae natus nobis repellendus minus ullam facere, porro illo? Iure
+                    vitae amet nam veniam non? Suscipit similique maxime deleniti obcaecati recusandae, ipsum, culpa
+                    dignissimos, amet eum dolor earum. Cupiditate tenetur rem error.
+                </p>
+                <a href="Practical-5-css.html">Read More</a>
+            </div>
+            <div class="rect"><img src="./Practical-5/jquery-logo-blue.png" alt="">
+                <h4>Introduction to HTML</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ex consequuntur, minima cumque sequi
+                    molestias eum porro. Maiores recusandae natus nobis repellendus minus ullam facere, porro illo? Iure
+                    vitae amet nam veniam non? Suscipit similique maxime deleniti obcaecati recusandae, ipsum, culpa
+                    dignissimos, amet eum dolor earum. Cupiditate tenetur rem error.
+                </p>
+                <a href="Practical-5-js.html">Read More</a>
+            </div>
+            <div class="rect">
+                <img src="./Practical-5/bootstrap.jpg" alt="">
+                <h4>Introduction to HTML</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ex consequuntur, minima cumque sequi
+                    molestias eum porro. Maiores recusandae natus nobis repellendus minus ullam facere, porro illo? Iure
+                    vitae amet nam veniam non? Suscipit similique maxime deleniti obcaecati recusandae, ipsum, culpa
+                    dignissimos, amet eum dolor earum. Cupiditate tenetur rem error.
+                </p>
+                <a href="Practical-5-Bootstrap.html">Read More</a>
+            </div>
+        </div>
+        <div style="margin: 25px; text-align: center;" id="contect">
+            <span
+                style="font-size: 60px;color: black;font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Contact</span>
+        </div>
+        <div class="footer">
+            Website Templete for Practical-8 &copy; <a
+                href="https://github.com/sijariyasajal/practical8.git">GitHub/sijariyasajal</a>
+            <br>
+            <br>
+            <a href="#home">Back To top</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
